@@ -10,4 +10,23 @@ public class Menu {
     }
 
     // implement the required methods here
+
+    // adds a meal to the menu. If the meal is already on the list, it should not be added again.
+    public void addMeal(String meal) {
+        if (!(meals.contains(meal))) {
+            meals.add(meal);
+        }
+    }
+
+    // prints the meals.
+    public void printMeals() {
+        for (String meal : this.meals) {
+            System.out.println(meal);
+        }
+    }
+
+    // clears the menu.
+    public void clearMenu() {
+        meals.clear();
+    }
 }
